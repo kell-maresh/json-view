@@ -96,7 +96,7 @@ var JsonView = (function (exports) {
     var getSizeString = function getSizeString(node) {
       var len = node.children.length;
       if (node.type === 'array') return "[".concat(len, "]");
-      if (node.type === 'object') return "{".concat(len, "}");
+      if (node.type === 'object') return "{".concat(len, "} keys");
       return null;
     };
 
