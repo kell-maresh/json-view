@@ -219,9 +219,7 @@ var JsonView = (function (exports) {
   }
   
   function expandRoot(node) {
-    node.el.classList.remove('hide');
-    node.isExpanded = true;
-    setCaretIconDown(node);
+    toggleNode(node);
   }
 
   exports.collapseChildren = collapseChildren;
