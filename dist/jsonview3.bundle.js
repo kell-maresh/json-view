@@ -179,8 +179,9 @@ var JsonView = (function (exports) {
     var data = typeof jsonData === 'string' ? JSON.parse(jsonData) : jsonData;
     var rootNode = createNode({
       value: data,
-      key: getDataType(data),
-      type: getDataType(data)
+      key: 'metadata',
+      type: getDataType(data),
+      isExpanded: true
     });
     createSubnode(data, rootNode);
     return rootNode;
