@@ -20,6 +20,8 @@
     color: #4F9DAB;
     margin-right: 4px;
     margin-left: 4px; }
+  .json-container .json-separator {
+    color: #4F9DAB; }
   .json-container .json-index {
     margin-right: 4px;
     margin-left: 4px; }
