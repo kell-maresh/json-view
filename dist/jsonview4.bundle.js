@@ -179,9 +179,8 @@ var JsonView = (function (exports) {
     var data = typeof jsonData === 'string' ? JSON.parse(jsonData) : jsonData;
     var rootNode = createNode({
       value: data,
-      key: 'metadata',
-      type: getDataType(data),
-      isExpanded: true
+      key: 'imageMetadata',
+      type: getDataType(data)
     });
     createSubnode(data, rootNode);
     return rootNode;
@@ -218,10 +217,17 @@ var JsonView = (function (exports) {
       setCaretIconRight(child);
     });
   }
+  
+  function expandRoot(node) {
+    node.el.classList.remove('hide');
+    node.isExpanded = true;
+    setCaretIconDown(node);
+  }
 
   exports.collapseChildren = collapseChildren;
   exports.createTree = createTree;
   exports.expandChildren = expandChildren;
+  exports.expandRoot = expandRoot;
   exports.render = render;
   exports.renderJSON = renderJSON;
   exports.traverseTree = traverseTree;
