@@ -1,7 +1,6 @@
 .json-container {
   font-family: 'Open Sans';
   font-size: 16px;
-  background-color: #fff;
   color: #808080;
   box-sizing: border-box; }
   .json-container .line {
@@ -18,7 +17,7 @@
     margin-right: 4px;
     margin-left: 4px; }
   .json-container .json-key {
-    color: #fff;
+    color: #4F9DAB;
     margin-right: 4px;
     margin-left: 4px; }
   .json-container .json-index {
@@ -31,8 +30,9 @@
   .json-container .json-boolean {
     color: #ec5f66; }
   .json-container .json-string {
-    color: #86b25c; }
+    color: #66982B; }
   .json-container .json-size {
+    color: #66982B;
     margin-right: 4px;
     margin-left: 4px; }
   .json-container .hide {
@@ -44,7 +44,7 @@
     border-style: solid; }
   .json-container .fa-caret-down {
     border-width: 6px 5px 0 5px;
-    border-color: #808080 transparent; }
+    border-color: #4F9DAB transparent; }
   .json-container .fa-caret-right {
     border-width: 5px 0 5px 6px;
-    border-color: transparent transparent transparent #808080; }
+    border-color: transparent transparent transparent #4F9DAB; }
